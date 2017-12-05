@@ -3,7 +3,12 @@
 function myMap(arr, callback) {
 
 //  CODE INSIDE HERE   //
+var doubler= [];
+	for (var i = 0; i < arr.length; i++) {
+	doubler[i] = callback (arr[i], i, arr);
 
+}
+return doubler;
 }
 
 /*
